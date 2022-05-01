@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+    body {
+        position: absolute;
+        margin: 0px;
+        overflow: hidden;
+        top: 0px;
+        bottom: 0px;
+        width: 100%;
+        background-color: black;
+        height: 100%;
+        opacity: 60%;
+        z-index: 5;
+}
+
+.videoSection {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+#video-elem {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.videoOverlay {
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+    color:black;
+
+}
+
+.row.text-center {
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(204, 204, 204, 0.5)
+}
+</style>
+<body>
+    <section class="topInfo1">
+        <div class="videoSection">
+            <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+                <source src='assets\loopvideo.mp4' type="video/mp4">
+            </video>
+        </div>
+        <div class="videoOverlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="">
+                        <h1 class="h1">Hier entsteht etwas ganz Großes, wir halten euch auf dem Laufenden</h1>
+                    </div>
+                    <div class="mx-auto">
+                        <a class="btn btn-success btn-block" style="margin-top:20px" href="/services">Folge uns auf Instagram<a href="" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                          </a></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+       
+</body>
+</html>
